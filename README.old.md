@@ -1,1 +1,0 @@
-# vr-here-frontend
