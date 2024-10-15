@@ -2,7 +2,7 @@
   "name": "vr-here-frontend",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://vr-here-01.github.io/vr-here-frontend",
+  "homepage": "https://vr-here-01.github.io/vr-here-frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
