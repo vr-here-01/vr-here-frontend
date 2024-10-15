@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vr-here-frontend/static/css/main.54b5e4a0.css",
+    "main.js": "/vr-here-frontend/static/js/main.734c0531.js",
+    "static/js/453.82f03524.chunk.js": "/vr-here-frontend/static/js/453.82f03524.chunk.js",
+    "index.html": "/vr-here-frontend/index.html",
+    "main.54b5e4a0.css.map": "/vr-here-frontend/static/css/main.54b5e4a0.css.map",
+    "main.734c0531.js.map": "/vr-here-frontend/static/js/main.734c0531.js.map",
+    "453.82f03524.chunk.js.map": "/vr-here-frontend/static/js/453.82f03524.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54b5e4a0.css",
+    "static/js/main.734c0531.js"
+  ]
+}
