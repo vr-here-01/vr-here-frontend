@@ -20,9 +20,9 @@ deploy-react:
     - git config --global user.name "rupesh-kallepelli"
     - git clone https://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@github.com/vr-here-01/vr-here-frontend.git
     - cd vr-here-frontend
-    - git checkout gh-pages || git checkout --orphan gh-pages
+    - git checkout master || git checkout --orphan master # Ensure you are on the master branch
     - rm -rf * # Clear the current content (except the hidden .git folder)
     - cp -r ../build/* . # Copy the build files into the root
     - git add .
-    - git commit -m "Deploy React app to GitHub Pages"
-    - git push origin gh-pages
+    - git commit -m "Deploy React app to master branch"
+    - git push origin master # Push changes to the master branch
