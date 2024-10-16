@@ -1,0 +1,28 @@
+# React Frontend Build and Deploy
+stages:
+  - build
+  - deploy
+
+build-react:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+deploy-react:
+  stage: deploy
+  script:
+    - apt-get update && apt-get install -y git # Ensure git is installed
+    - git config --global user.email "kallepallirupesh@gmail.com"
+    - git config --global user.name "rupesh-kallepelli"
+    - git clone https://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@github.com/vr-here-01/vr-here-frontend.git
+    - cd vr-here-frontend
+    - git checkout gh-pages || git checkout --orphan gh-pages
+    - rm -rf * # Clear the current content (except the hidden .git folder)
+    - cp -r ../build/* . # Copy the build files into the root
+    - git add .
+    - git commit -m "Deploy React app to GitHub Pages"
+    - git push origin gh-pages
